@@ -1,12 +1,11 @@
-/* Hoja de estilo */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+/*Body */
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'DM Sans', sans-serif;
+	font-weight: 100;
+	font-family: "Segoe UI", Arial, sans-serif;
 }
 
 html{
@@ -15,15 +14,16 @@ html{
 
 
 /*Seccion inicial*/
-#index{
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/string-code.png");
+#main{
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/dark-aurora.webp");
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
 }
 
-#index .content header{
-	background-color: rgba(0, 0, 0);
+#main .content header{
+	background: #9fe11d;
+	opacity: 0.7;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
@@ -32,7 +32,7 @@ html{
 
 /*Seccion contenido*/
 
-#index .content header .content-header{
+#main .content header .header{
 	max-width: 1100px;
 	margin: auto;
 	display: flex;
@@ -43,18 +43,19 @@ html{
 
 /*centrar y enfocar navbar*/
 
-#index .content header .content-header h1{
+#main .content header .header h1{
 	text-align: center;
-	color: #ff5080;
+	color: #a8e8f6;
+	font-size: 40px;
 }
 
-#index .content header .content-header nav ul{
+#main .content header .header nav ul{
 	list-style: none;
 	display: flex;
 	align-items: center;
 }
 
-#index .content header .content-header nav ul a{
+#main .content header .header nav ul a{
 	text-decoration: none;
 	color: #fff;
 	margin: 0 12px;
@@ -62,11 +63,11 @@ html{
 	transition: .5%;
 }
 
-#index .content header .content-header nav ul a:hover{
-	color: #ff5080;
+#main .content header .header nav ul a:hover{
+	color: #a8e8f6;
 }
 
-#index .content header .content-header #sites a{
+#main .content header .header #sites a{
 	text-decoration: none;
 	color: #fff;
 	display: inline-block;
@@ -74,12 +75,13 @@ html{
 	transition: .5s;
 }
 
-#index .content header .content-header #sites a:hover{
-	color: #ff5080;
+#main .content header .header #sites a:hover{
+	color: #a8e8f6;
 }
 
 /* Presentacion */
-#index .content #presentation{
+
+#main .content #present{
 	max-width: 1100px;
 	height: 100vh;
 	margin: auto;
@@ -90,32 +92,32 @@ html{
 	justify-content: center;
 }
 
-#index .content #presentation .welcome{
+#main .content #present .welcome{
 	font-size: 16px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
 
-#index .content #presentation h2{
+#main .content #present h2{
 	font-size: 55px;
 	margin-bottom: 25px;
 	text-align: center;
 }
 
-#index .content #presentation h2 span{
-	font-size: 25px;
-	color: #ff5080;
+#main .content #present h2 span{
+	font-size: 40px;
+	color: #a8e8f6;
 }
 
-#index .content #presentation .description{
+#main .content #present .description{
 	max-width: 700px;
 	margin: 25px auto;
 	font-size: 18px;
 	text-align: center;
 }
 
-#index .content #presentation a{
+#main .content #present a{
 	text-decoration: none;
 	display: inline-block;
 	margin: 25px;
@@ -128,8 +130,8 @@ html{
 	transition: .5s;
 }
 
-#index .content #presentation a:hover{
-	background-color: #ff5080;
+#main .content #present a:hover{
+	background-color: #a8e8f6;
 }
 
 /* Iconos */
@@ -139,9 +141,10 @@ html{
 	display: none;
 }
 
+
 /* Seccion de presentacion */
 
-#about{
+#aboutme{
 	max-width: 1100px;
 	margin: auto;
 	padding: 100px 15;
@@ -149,19 +152,20 @@ html{
 	display: flex;
 }
 
-#about .container-photo{
+#aboutme #container{
 	max-width: 400px;
 	margin-right: 80px;
 }
 
-#about .container-photo img{
+#aboutme #container img{
 	padding: 20px;
 	width: 100%;
 	border-radius: 20px;
-	background-color: #F3F3F3;
 }
 
-#about .aboutme .title-section{
+
+
+#aboutme .aboutme .title-section{
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #111135;
@@ -170,18 +174,18 @@ html{
 	text-decoration-thickness: 5px ;
 }
 
-#about .aboutme h2{
+#aboutme .aboutme h2{
 	font-size: 34px;
 	font-weight: bold;
 	margin:  20px 0;
 	letter-spacing: 2px;
 }
 
-#about .aboutme h2 span {
+#aboutme .aboutme h2 span {
 	color: #ff5080;
 }
 
-#about .aboutme h3{
+#aboutme .aboutme h3{
 	font-size: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -189,14 +193,14 @@ html{
 	letter-spacing: 1px;
 }
 
-#about .aboutme p{
+#aboutme .aboutme p{
 	font-size: 14px;
 	line-height: 25px;
 	color: #565656;
 	margin-bottom: 12px;
 }
 
-#about .aboutme a{
+#aboutme .aboutme a{
 	display: inline-block;
 	text-decoration: none;
 	color: #000;
@@ -207,10 +211,11 @@ html{
 	transition: .5s;
 }
 
-#about .aboutme a:hover{
+#aboutme .aboutme a:hover{
 	background-color: #ff5080;
 	color: #fff;
 }
+
 
 /* Seccion de experiencias */
 
@@ -283,10 +288,9 @@ html{
 	line-height: 22px;
 }
 
-/* skills-list */
 
-.container-skills{
-	background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("../img/notebook.jpg");
+#skills{
+	background: linear-gradient(#1e6cdc, rgba(102,190,207, 0.8)), url("../img/gx8kilgohxne1.webp");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -295,18 +299,18 @@ html{
 	text-align: center;
 }
 
-.container-skills .skill{
+#skills .skill{
 	max-width: 600px;
 	margin: 30px auto;
 }
 
 
-.container-skills .skill .info{
+#skills .skill .info{
 	display: flex;
 	justify-content: space-between;
 }
 
-.container-skills .skill .list{
+#skills .skill .list{
 	display: inline-block;
 	margin-right: 20px;
 	height: 10px;
@@ -314,7 +318,7 @@ html{
 	background-color: #fff;
 }
 
-.container-skills .skill .bar{
+#skills .skill .bar{
 	background-color: #919191;
 	width: 100%;
 	height: 6px;
@@ -323,52 +327,31 @@ html{
 
 /* Progress bar */
 
-.container-skills .skill .bar .progress-bar{
+#skills .skill .bar .progress-bar{
 	background-color: #fff;
 	width: 85%;
 	height: 6px;
 	animation: progess 2s forwards;
 }
-.container-skills .skill .bar .progress-bar2{
+#skills .skill .bar .progress-bar2{
 	background-color: #fff;
 	width: 45%;
 	height: 6px;
 	animation: progess2 2s forwards;
 }
-.container-skills .skill .bar .progress-bar3{
+#skills .skill .bar .progress-bar3{
 	background-color: #fff;
 	width: 50%;
 	height: 6px;
 	animation: progess3 2s forwards;
 }
-.container-skills .skill .bar .progress-bar4{
+#skills .skill .bar .progress-bar4{
 	background-color: #fff;
 	width: 70%;
 	height: 6px;
 	animation: progess4 2s forwards;
 }
 
-/* animations */
-
-@keyframes progess{
-	0%{width: 0;}
-	100%{width: 70%;}
-}
-
-@keyframes progess2{
-	0%{width: 0;}
-	100%{width: 35%;}
-}
-
-@keyframes progess3{
-	0%{width: 0;}
-	100%{width: 60%;}
-}
-
-@keyframes progess4{
-	0%{width: 0;}
-	100%{width: 70%;}
-}
 
 /* Seccion portafolio */
 
@@ -430,6 +413,7 @@ html{
 	bottom: 0;
 }
 
+
 /* seccion contacto */
 
 #contact{
@@ -438,7 +422,7 @@ html{
 
 
 .container-contact{
-	background: linear-gradient(#eb5a5acc, rgba(15, 145, 15, 0.8)), url("../img/programmer-wallpaper-preview.jpg");
+	background: linear-gradient(#7aeafe, rgba(15, 145, 15, 0.8)), url("../img/frutiger-aqua.webp");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -517,6 +501,30 @@ footer a{
 	font-size: 26px;
 }
 
+
+/* animations */
+
+@keyframes progess{
+	0%{width: 0;}
+	100%{width: 70%;}
+}
+
+@keyframes progess2{
+	0%{width: 0;}
+	100%{width: 35%;}
+}
+
+@keyframes progess3{
+	0%{width: 0;}
+	100%{width: 60%;}
+}
+
+@keyframes progess4{
+	0%{width: 0;}
+	100%{width: 70%;}
+}
+
+
 /* Responsive design */
 
 @media screen and (max-width:800px){
@@ -546,3 +554,7 @@ footer a{
 		display: block;
 	}
 }
+
+
+/*Slider*/
+

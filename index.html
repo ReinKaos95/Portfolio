@@ -2,34 +2,31 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>Portafolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/xp.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+	<title>Portfolio</title>
 </head>
 <body>
-
-<!-- Seccion inicial -->
-
-<section id="index">
-	<div class="content">
-		<header>
-				<div class="content-header">
+	<section id="main">
+		<div class="content">
+			<header>
+				<div class="header">
 
 					<!-- navbar -->
 
-				<h1>Port</h1>
-				<nav id="navbar" class="">
-					<ul id="links">
-						<li><a href="#index" class="selected">Main</a></li>
-						<li><a href="#about">Sobre mi</a></li>
-						<li><a href="#experiences">Experiencias</a></li>
-						<li><a href="#skills">Sumario</a></li>
-						<li><a href="#portfolio">Portafolio</a></li>
-						<li><a href="#contact">Contacto</a></li>
-					</ul>
-				</nav>
+					<h1>Portafolio</h1>
+						<nav id="navbar">
+							<ul id="links">
+								<li><a href="#main">Main</a></li>
+								<li><a href="#aboutme">Sobre mi</a></li>
+								<li><a href="#experiences">Experiencias</a></li>
+								<li><a href="#skills">Sumario</a></li>
+								<li><a href="#portfolio">Portafolio</a></li>
+								<li><a href="#contact">Contacto</a></li>
+							</ul>
+						</nav>
 
 				<!-- iconos del menu -->
 
@@ -45,49 +42,53 @@
 					<a href="#"><i class="fa-brands fa-youtube"></i></a>
 				</div>
 
-			</div>
-		</header>
+					</div>
+			</header>
 
-		<!-- presentacion -->
+	<!-- presentacion -->
 
-		<div id="presentation">
-			<p class="welcome">Bienvenidos</p>
-			<h2>Mi nombre es <span>Walter Gutierrez</span>, Desarrollador web</h2>
+			<div id="present">
+				<p class="welcome">
+					<h2>Mi nombre es <span>Walter Gutierrez</span>, Desarrollador web</h2>
+				</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 			<a href="#portfolio">Ir a mi portafolio</a>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 <!-- Seccion de presentacion -->
 
-<section id="about">
-	<div class="container-photo">
-		<!-- Actualmente se ve pequeño porque la imagen es de 500x500 :( -->
-		<img src="img/pfp.jpg">
-	</div>
+	<section id="aboutme">	
+
+  <div id="container">
+    <img src="img/pfp.jpg">
+  </div>
+
 	<div class="aboutme">
-		<p class="title-section">Sobre mi</p>
-		<h2>Hola, soy <span>Walter Gutierrez</span></h2>
-		<h3>Desarrollador Web</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat.</p>
-		<p> Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur.</p>
-		<p>Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<a href="public/CV.pdf">Descargar CV</a>
-	</div>
-</section>
 
-<!-- Seccion de experiencias -->
+      <h2>Hola, soy <span>Walter Gutierrez</span></h2>
+    <h3>Desarrollador Web</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button type="button" onclick="location.href='public/CV.pdf'">Descargar CV</button>
+  </div>
+	</section>
 
-<section id="experiences">
-	<h3 class="title-sect">Mi experiencia</h3>
-	<div class="rows">
+	<!-- Seccion de experiencias -->
+
+	<section id="experiences">
+
+		<h3 class="title-sect">Mi experiencia</h3>
+
+			<div class="rows">
 		<div class="experience">
 			<span class="icons"><i class="fa-solid fa-code"></i></span>
 			<h4>Desarrollo de aplicacion web</h4>
@@ -100,7 +101,7 @@
 		</div>
 		<div class="experience">
 			<span class="icons"><i class="fa-solid fa-gamepad"></i></span>
-			<h4>Desarrollo de aplicacion web</h4>
+			<h4>Manejo de base de datos</h4>
 			<ul class="experiences-list">
 				<li>Web</li>
 				<li>Graphic</li>
@@ -120,48 +121,10 @@
 		<p>Desarrollo y escritura de sistemas stand-alone, principalmente del lado de servidor.</p>
 		</div>
 	</div>
-	<div class="rows">
-		<div class="experience">
-			<span class="icons"><i class="fa-solid fa-pen-nib"></i></span>
-			<h4>Desarrollo de aplicacion web</h4>
-			<ul class="experiences-list">
-				<li>Web</li>
-				<li>Graphic</li>
-				<li>SEO</li>
-			</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-		<div class="experience">
-			<span class="icons"><i class="fa-brands fa-linux"></i></span>
-			<h4>Desarrollo de aplicacion web</h4>
-			<ul class="experiences-list">
-				<li>Web</li>
-				<li>Graphic</li>
-				<li>SEO</li>
-			</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-		<div class="experience">
-			<span class="icons"><i class="fa-solid fa-database"></i></span>
-			<h4>Desarrollo de aplicacion web</h4>
-			<ul class="experiences-list">
-				<li>Web</li>
-				<li>Graphic</li>
-				<li>SEO</li>
-			</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-	</div>
-</section>
-
-<!-- Seccion de sumario -->
-
-<div class="container-skills" id="skills">
-	<h3>Habilidades</h3>
-	<div class="skill">
+	</section>
+	<section id="skills">
+		<h3>Habilidades</h3>
+		<div class="skill">
 		<div class="info">
 			<p><span class="list"></span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  /></p>
 			<span class="range">70%</span>
@@ -183,11 +146,11 @@
 
 		<div class="skill">
 		<div class="info">
-			<p><span class="list"></span><img src="img/pngwing.com.png" height="40"></p>
+			<p><span class="list"></span>		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  /><img width="12" /></p>
 			<span class="range">50%</span>
 		</div>
 		<div class="bar">
-			<div id="cpp" class="progress-bar3"></div>
+			<div id="js" class="progress-bar3"></div>
 		</div>
 	</div>
 
@@ -200,90 +163,13 @@
 			<div id="sql" class="progress-bar4"></div>
 		</div>
 	</div>
-	<div>
-		<h3 class="title-section-portfolio">Especialidades extra</h3>
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="40" alt="vuejs logo"  /> <img width="12" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  /> <img width="12" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  /><img width="12" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  /><img width="12" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  /><img width="12" />
-		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  /><img width="12" />
-	</div>
-	<div>
-		<h3 class="title-section-portfolio">Actualmente Aprendiendo</h3>
-		  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="40" alt="flutter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-	</div>
-</div>
-
-<!-- Seccion de portafolio -->
+	</section>
 
 <section id="portfolio">
-	<h3 class="title-section-portfolio">Portafolio</h3>
-	<div class="stacks">
-		<div class="projects">
-			<div class="overlay">
-				<img src="img/SGDE.png" alt="">
-				<div class="info">
-					<h4>MicroBlogging</h4>
-					<p>Sistema inspirado tanto en Twitter como en LiveJournal</p>
-				</div>
-			</div>
-		</div>
-		<div class="projects">
-			<div class="overlay">
-				<img src="img/VFClone.png" alt="">
-				<div class="info">
-					<h4>Vampire Freaks Clone</h4>
-					<p>Clon de la extinta red social Vampire Freaks en las epocas del 2000, 2004 y 2007</p>
-				</div>
-			</div>
-		</div>
-		<div class="projects">
-			<div class="overlay">
-				<img src="img/MSClone.png" alt="">
-				<div class="info">
-					<h4>The Myspace Project</h4>
-					<p>Pagina basada en Myspace en las epocas de 2006 y 2007</p>
-				</div>
-			</div>
-		</div>
-	</div>
-		<div class="stacks">
-		<div class="projects">
-			<div class="overlay">
-				<img src="img/SGDE.png" alt="">
-				<div class="info">
-					<h4>Tienda de videojuegos</h4>
-					<p>Proyecto de tienda de videojuegos</p>
-				</div>
-			</div>
-		</div>
-		<div class="projects">
-			<div class="overlay">
-				<img src="img/VFClone.png" alt="">
-				<div class="info">
-					<h4>Biblioteca</h4>
-					<p>Proyecto de Biblioteca para escritorio</p>
-				</div>
-			</div>
-		</div>
-		<div class="projects">
-			<div class="overlay">
-				<img src="img/MSClone.png" alt="">
-				<div class="info">
-					<h4>Super Mario Land</h4>
-					<p>Prueba usando la libreria de PyGame</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<h3>Portafolio</h3>
+	<h5>Coming Soon</h5>
 </section>
 
-<!-- Seccion de contacto -->
 
 <section class="container-contact" id="contact">
 	<h3 class="contact-text">Contacta conmigo</h3>
@@ -300,11 +186,12 @@
 				<textarea cols="30" rows="10" class="input-full" placeholder="Mensaje..."></textarea>
 			</div>
 
-				<input type="submit" name="" value="Enviar" class="btn-submit">
+				<button>Enviar</button>
 
 		</form>
 	</div>
 </section>
+
 
 <!-- Seccion de pie de pagina -->
 
@@ -316,6 +203,8 @@
 			<a href="#"><i class="fa-brands fa-youtube"></i></a>
 		</div>
 </footer>
-<script src="js/script.js"></script>
+
+
+	<script src="js/script.js"></script>
 </body>
 </html>
