@@ -3,132 +3,126 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	  <!-- Font Awesome (iconos clásicos) -->
+	<!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts: mezcla clásica (serif para títulos, sans para texto) -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Inter para texto, Outfit para encabezados (Ultra Moderno) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Portfolio</title>
+	<title>Portfolio Tech | Modern & Clean</title>
 </head>
 <body>
 
+<header>
+	<div class="header">
+		<div class="navbar">
+			<ul>
+				<li><a href="#main">Inicio</a></li>
+				<li><a href="#aboutme">Sobre Mi</a></li>
+				<li><a href="#experiencia">Experiencia</a></li>
+				<li><a href="#portafolio">Portafolio</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
 <section id="main">
-<div class="content">
-	<header>
-		<div class="header">
-			<div class="navbar">
-				<ul>
-					<li><a href="">Inicio</a></li>
-					<li><a href="">Sobre Mi</a></li>
-					<li><a href="">Experiencia</a></li>
-					<li><a href="">Portafolio</a></li>
-					<li><a href="">Contacto</a></li>
-				</ul>
-			</div>
+	<div class="content">
+		<div id="present" class="reveal">
+			<p class="welcome">
+				<h2>Mi nombre es <span>Walter Gutierrez</span><br>Desarrollador Web</h2>
+			</p>
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<a href="#portafolio">Ir a mi portafolio</a>
 		</div>
-	</header>
-			<div id="present">
-				<p class="welcome">
-					<h2>Mi nombre es <span>Walter Gutierrez</span>, Desarrollador web</h2>
-				</p>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
-			<a href="#portfolio">Ir a mi portafolio</a>
-			</div>
-		</div>
-</div>
+	</div>
 </section>
 
-<section id="aboutme">
-	  <div id="container">
+<section id="aboutme" class="reveal">
+  <div id="container">
     <img src="img/pfp.jpg">
   </div>
 
 	<div class="aboutme">
-
-      <h2>Hola, soy <span>Walter Gutierrez</span></h2>
+    <h2>Hola, soy <span>Walter Gutierrez</span></h2>
     <h3>Desarrollador Web</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.</p>
-    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur.</p>
-    <p>Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <button type="button" onclick="location.href='public/CV.pdf'">Descargar CV</button>
   </div>
 </section>
 
 <section id="experiencia">
-			<h3 class="title-sect">Mi experiencia</h3>
-
-			<div class="rows">
-		<div class="experience">
+	<h3 class="title-sect reveal">Mi experiencia</h3>
+	<div class="rows">
+		<div class="experience reveal">
 			<span class="icons"><i class="fa-solid fa-code"></i></span>
-			<h4>Desarrollo de aplicacion web</h4>
+			<h4>Desarrollo Web</h4>
 			<ul class="experiences-list">
-				<li>Web</li>
-				<li>Graphic</li>
-				<li>SEO</li>
+				<li>Frontend</li>
+				<li>Backend</li>
+				<li>UI/UX</li>
 			</ul>
-		<p>Desarrollo de aplicaciones y soluciones en un entorno web, y sitios web para cualquier utilidad.</p>
+			<p>Desarrollo de aplicaciones y soluciones en un entorno web, y sitios web para cualquier utilidad.</p>
 		</div>
-		<div class="experience">
-			<span class="icons"><i class="fa-solid fa-gamepad"></i></span>
-			<h4>Manejo de base de datos</h4>
+		<div class="experience reveal">
+			<span class="icons"><i class="fa-solid fa-database"></i></span>
+			<h4>Bases de Datos</h4>
 			<ul class="experiences-list">
-				<li>Web</li>
-				<li>Graphic</li>
-				<li>SEO</li>
+				<li>Relacional</li>
+				<li>NoSQL</li>
+				<li>Optimization</li>
 			</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Diseño y manejo de arquitecturas de bases de datos para garantizar escalabilidad y rendimiento optimizado.</p>
 		</div>
-		<div class="experience">
+		<div class="experience reveal">
 			<span class="icons"><i class="fa-solid fa-desktop"></i></span>
-			<h4>Desarrollo de aplicaciones de escritorio</h4>
+			<h4>Aplicaciones Desktop</h4>
 			<ul class="experiences-list">
-				<li>Web</li>
-				<li>Graphic</li>
-				<li>SEO</li>
+				<li>Java</li>
+				<li>C#</li>
+				<li>Stand-alone</li>
 			</ul>
-		<p>Desarrollo y escritura de sistemas stand-alone, principalmente del lado de servidor.</p>
+			<p>Desarrollo y escritura de sistemas stand-alone nativos, principalmente del lado de servidor o cliente local.</p>
 		</div>
 	</div>
 </section>
 
-<section id="portafolio">
+<section id="portafolio" class="reveal">
 	<h3>Portafolio</h3>
-	<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img/image.png" style="width:100%">
-    <div class="text">Landing page</div>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/image.png" style="width:100%">
+      <div class="text">Landing page</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/image2.png" style="width:100%">
+      <div class="text">Gestor de equipos</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/image3.png" style="width:100%">
+      <div class="text">Sistema Zimbra de Correos (Actual.)</div>
+    </div>
+    <!-- Controles del Slider -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/image2.png" style="width:100%">
-    <div class="text">Gestor de equipos</div>
+  <br>
+  <!-- Puntos indicadores -->
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img/image3.png" style="width:100%">
-    <div class="text">Sistema Zimbra de Correos (Actual.)</div>
-  </div>
-
-
-</div>
-<br>
 </section>
 
-<section id="contact">
-		<h3 class="contact-text">Contacta conmigo</h3>
+<section id="contact" class="reveal">
+	<h3 class="contact-text">Contacta conmigo</h3>
 	<div class="container-form">
 		<form action="">
 			<div class="stack half">
@@ -141,12 +135,57 @@
 			<div class="stack">
 				<textarea cols="30" rows="10" class="input-full" placeholder="Mensaje..."></textarea>
 			</div>
-
-				<button>Enviar</button>
-
+			<button type="button">Enviar</button>
 		</form>
 	</div>
 </section>
+
+<footer>
+  <p>&copy; 2026 Walter Gutierrez. Todos los derechos reservados.</p>
+</footer>
+
 <script src="js/slider.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 1. Animaciones de Revelado (con efecto escalonado para tarjetas)
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Efecto escalonado para las tarjetas de experiencia
+          if(entry.target.classList.contains('experience')){
+             let delay = Array.from(entry.target.parentNode.children).indexOf(entry.target) * 0.15;
+             entry.target.style.transitionDelay = `${delay}s`;
+          }
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: "0px 0px -40px 0px"
+    });
+
+    reveals.forEach(reveal => {
+      revealObserver.observe(reveal);
+    });
+
+    // 2. Transición suave en el menú de navegación interceptando clics
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if(targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // offset para no tapar con el header fijo
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+  });
+</script>
 </body>
 </html>
